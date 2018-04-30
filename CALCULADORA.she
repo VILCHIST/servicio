@@ -1,0 +1,55 @@
+#!/bin/bash 
+clear
+
+echo "::::::::  CALCULADORA  ::::::::"
+echo ""
+echo"        DIGITE UNA OPCION        "
+echo""
+echo " 1 -- SUMA"
+echo " 2 -- RESTA"
+echo " 3 -- MULTIPLICACION"
+echo " 4 -- DIVISION"
+echo " 5 -- SALIR"
+
+OPC=5
+
+read -" DIGITE UNA OPCION DE 1 al 6: " OPC
+echo""
+
+if    [ $OPC -gt 6 ]; then
+      echo "           ERROR DIGITE NUEVAMENTE          "
+      echo ""
+
+elif  [ $OPC -eq 1 ]; then
+      read -p " INTRODUCIR UN NUMERO: " N1
+      read -p " INTRODUCIR UN NUMERO: " N2
+      SUMA=$[ $N1 + $N2 ]
+      echo ""
+      echo " RESULTADO:    $SUMA"
+      echo ""
+
+elif  [ $OPC -eq 2 ]; then
+       read -p " INTRODUCIR UN NUMERO: " N1
+       read -p " INTRODUCIR UN NUMERO: " N2
+       RESTA=$[ $N1 - $N2 ]
+       echo ""
+       echo " RESULTADO:    $RESTA"
+       echo ""
+
+elif  [ $OPC -eq 3 ]; then
+      read -p " INTRODUCIR UN NUMERO: " N1
+      read -p " INTRODUCIR UN NUMERO: " N2
+      MULT$[ $N1 * $N2 ]
+      echo ""
+      echo " RESULTADO:    $MULT"
+      echo ""
+
+elif  [ $OPC -eq 5 ]; then
+      exit
+
+      else 
+               echo " ERROR SALIO AL MAL HOUSTON "
+               echo ""
+
+fi
+
